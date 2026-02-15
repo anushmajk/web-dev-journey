@@ -1,0 +1,37 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>Exercise</title>
+  </head>
+  <body>
+    <script>
+      function convertLength(length, from, to){
+        if(from === 'miles' && to === 'km'){
+         let number = length*1.6;
+        console.log(number +' '+ to);
+        } else if (from === 'km' && to ==='miles'){
+           number = length/1.6;
+           console.log(number +' '+ to);
+        } else if(from === 'km' && to === 'km'){
+          console.log(length +' '+ to);
+        } else if( from ==='miles' && to === 'ft'){
+          number = length*5280;
+          console.log(number +' '+ to);
+        } else if ( from ==='km' && to === 'ft'){
+          number = length*3281;
+          console.log(number +' '+ to);
+        } else {
+          console.log( `Invalid unit:${ from}`);
+          console.log (`Invalid unit:${ to}`);
+        }
+      }
+      convertLength(50, 'miles', 'km');
+      convertLength(32, 'km', 'miles');
+      convertLength(50, 'km', 'km');
+      convertLength(5, 'miles', 'km');
+      convertLength(5, 'miles', 'ft');
+      convertLength(5, 'km', 'ft');
+      convertLength(5, 'lbs', 'm');
+    </script>
+  </body>
+</html>

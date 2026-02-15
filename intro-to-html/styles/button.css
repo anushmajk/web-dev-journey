@@ -1,0 +1,61 @@
+.subscribe-button{
+  background-color:rgb(200, 0, 0);
+  color:white;
+  border:none;
+  height:36px;
+  width:105px;
+  border-radius:2px; /*For rounded corners*/
+  cursor:pointer;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right: 16px;
+  padding-left: 16px;
+  /*In css space is called margin so if needed space between teo elemnts use margin*/
+  margin-right:8px;
+  transition:opacity 0.15s;
+}
+.subscribe-button:hover{
+/*hover*/
+opacity:0.8;
+}
+.subscribe-button:active{
+opacity:0.5;
+}
+.join-button{
+  background-color: white;
+  color:rgb(90, 90, 247);
+  border:1px solid rgb(90, 90, 247);
+  height:36px; 
+  width:62px;
+  border-radius: 2px;
+  cursor:pointer;
+  padding-top:9px;
+  padding-bottom: 9px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right:8px; 
+  transition:background-color 0.15s, color 0.15s; /*transition for smooth */
+}
+.join-button:hover{
+  background-color:rgb(41,118,211);
+  color:white;
+}
+.join-button:active{
+  opacity:0.7;
+}
+.tweet-button{
+  color:white;
+  background-color:rgb(67, 172, 232);
+  border:none;
+  height:36px;
+  width:75px;
+  border-radius:18px;/*If set half of the smallest value of height or width you get perfect rounded corners*/
+  font-weight:bold;
+  font-size:15px;
+  cursor:pointer;
+  transition: box-shadow 0.15s;
+  
+}
+.tweet-button:hover{
+box-shadow:5px 5px 10px rgba(0,0,0.15); /* horizontal vertical blur and color for shdows*/
+}
