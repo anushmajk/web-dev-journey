@@ -1,0 +1,86 @@
+body{
+  height:100000px;
+  background-color: #f8f8f8;
+}
+button{
+  background-color: #038D63;
+  color: white;
+  border: none;
+  border-radius:10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.product-title{
+  font-size: 20px;
+  font-family:Roboto;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.product-price{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sold{
+  font-size: 14px;
+  color: #888;
+  font-family: Arial;
+}
+.container{
+  display:grid;
+  grid-template-columns: 250px 250px 250px 250px 250px 250px;
+  
+}
+.card{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.overview{
+  display:inline;
+}
+.product-image{
+  width:200px;
+  height: 200px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  position: sticky;
+  top: 0;
+}
+.logo{
+  font-size: 40px;
+  font-weight: 900;
+  color: #038D63;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 20px;
+}
+.search-bar{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.search-bar input{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.search-bar button{
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #038D63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
