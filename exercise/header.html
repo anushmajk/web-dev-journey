@@ -5,101 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body{
-      padding-top:55px;
+    .header{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top:0;
+      left:0;
+      right:0;
     }
-   .header{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    align-items:center;
-    height:55px;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    background-color: white;
-    z-index:100;
-   }
-   .left-section{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-   }
-   .hamburger-menu{
-    width:24px;
-    margin-left:24px;
-    margin-right:24px;
-   }
-   .youtube-logo{
-    width:90px;
-   }
-   .middle-section{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-      flex:1;
-      margin-left: 20px;
-      margin-right: 20px;
-      max-width: 600px;
-      margin: auto;
-   }
-   .search{
-    flex:1;
-    min-width: 50px;
-    height:32px;
-    border:1px solid #ccc;
-    border-radius:2px 0 0 2px;
-    padding:0 10px;
-   }
-   .search-button{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:40px;
-    height:32px;
-    border:1px solid #ccc;
-    border-left:none;
-    border-radius:0 2px 2px 0;
-    background-color:#f8f8f8;
-   }
-   .voice-search-button{
-    display:flex;
-    height:32px;
-    width:32px;
-    border-radius: 16px;
-    border-style: none;
-    margin-left: 10px;
-    align-items:center;
-    justify-content:center;
-   }
-   .right-section{
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-between;
-    flex-shrink: 0;
-    width: 120px;
-    margin-right: 20px;
-   }
+    .left-section{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
   <header class="header">
-   <div class="left-section">
-    <img class="hamburger-menu" src="hamburger-menu.svg" alt="Hamburger Menu">
-    <img class="youtube-logo" src="youtube-logo.svg" alt="YouTube Logo">
-   </div>
-   <div class="middle-section">
-    <input class="search" type="text" placeholder="search">
-    <button class="search-button"> 
-      <img src="search.svg" alt="Search Icon">
-    </button>
-    <button class="voice-search-button">
-    <img class="voice-search" src="voice-search-icon.svg" alt="Voice Search Icon">
-    </button>
-   </div>
-   <div class="right-section"></div>
+<div class="left-section">
+  <img class="hamburger-menu" src="hamburger-menu.svg" alt="hamburger-menu">
+  <img class="yt-icon" src="youtube-logo.svg" alt="yt-icon">
+</div>
+<div class="middle-section"></div>
+<input type="text" placeholder="search">
+<button class="search-button">
+  <img class="search-img" src="search.svg">
+</button>
+<div class="right-section">
+  <img class="yt app" src="youtube-apps.svg" alt="yt app">
+  <img class="notifications" src="notifications.svg">
+  <img class="profile" src="anu.jpg">
+</div>
   </header>
 </body>
 </html>
