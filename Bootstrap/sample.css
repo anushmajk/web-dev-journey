@@ -1,0 +1,169 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #FFFBF2;
+    }
+     /* Hero Section */
+    .hero {
+      height: 100vh;
+      background-image: url(/Bootstrap/coffee\ beans\ on\ wooden\ background.jpg);
+      background-repeat: no-repeat;  
+      background-size: cover;     
+      background-position: center;
+      object-fit: cover;
+      position: relative;
+      color: white;
+    }
+     .overlay {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content { 
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 80px;
+      font-weight: bold;
+    }
+    .vertical-line{
+  width: 2px;             
+  height: 50px;          
+  background-color: orange; 
+  margin: auto;
+}
+    .hero h4 {
+      color: #d4a373;
+    }
+    .btn-color{
+      background-color: #52422F;
+      color:white;
+    }
+.header{
+  z-index: 122;
+}
+
+.small-title{
+  letter-spacing: 3px;
+  color: #c58b47;
+}
+
+.main-title{
+  font-weight: 700;
+  color: #3b2a25;
+}
+
+.service-img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.icon{
+  background-color: #c58b47;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.img{
+    width:300px;
+    height:300px;
+   }
+   .bordercolor{
+    border:1px solid #C98D4F;
+   }
+   .btn-color{
+    background-color: #C98D4F;
+    color:white;
+   }
+   .service-box{
+      display:flex;
+      gap:20px;
+      align-items:flex-start;
+    }
+
+    .service-img{
+      width:180px;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .icon-circle{
+      width:40px;
+      height:40px;
+      background:#c58b47;
+      color:#fff;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-right:10px;
+      flex-shrink:0;
+    }
+
+    .service-title{
+      font-size:20px;
+      font-weight:600;
+      color:#3b2a25;
+    }
+
+    .service-text{
+      font-size:14px;
+      color:#555;
+    }
+
+    .read-more{
+      color:#c58b47;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    .read-more:hover{
+      text-decoration:underline;
+    }
+
+    .footer-section {
+  position: relative;
+  background: url('bg\ c.jpg') center/cover no-repeat;
+}
+
+/* DARK OVERLAY */
+.footer-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 20, 10, 0.8); /* dark coffee overlay */
+}
+
+/* CONTENT ABOVE OVERLAY */
+.footer-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* SOCIAL ICON BOX */
+.social-box {
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-box:hover {
+  background: #c58b4e;
+  border-color: #c58b4e;
+}
