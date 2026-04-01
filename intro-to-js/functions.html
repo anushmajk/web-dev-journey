@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1> Function</h1>
+  <p id="example"></p>
+  <p id="demo"></p>
+  <script>
+    // simple function
+    function myfunction(){
+      console.log("Hello World!");
+    }
+    document.getElementById("example").innerHTML=myfunction();
+
+    //function with parameters
+    function introduce(name,age){
+      console.log("My name is " + name + " My age is " + age);
+    }
+    introduce("Anushma" , 22);
+
+    //function with return values (this is where it gives output in p tag)
+    function add(a,b){
+      return a+b;
+    }
+    document.getElementById("example").innerHTML= "Addition:"+ add(5,10);
+
+    //Arrow function 
+    const multiply=(a,b)=> {
+      return a*b;
+    }
+    document.getElementById("demo").innerHTML= "multiplication:" + multiply(5,10);
+  </script>
+</body>
+</html>
