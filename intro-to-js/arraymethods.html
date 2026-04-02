@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- array to string -->
+  <h5>Array toString</h5>
+  <p id="demo1"></p>
+  <!-- array at() -->
+   <p id="demo2"></p>
+   <!-- array join()-->
+   <p id="demo3"></p>
+   <!-- array pop()-->
+   <p id="demo4"></p>
+   <!-- array push()-->
+   <p id="demo5"></p>
+   <!-- array shift()-->
+   <p id="demo6"></p>
+   <!-- array unshift()-->
+   <p id="demo7"></p>
+   <!-- array indexOf()-->
+   <p id="demo8"></p>
+   <!-- array sort()-->
+   <p id="demo9"></p>
+   <p id="demo10"></p>
+  <script>
+    // array to string
+    const fruits=["Banana","Orange","Apple","Mango"];
+    let mylist=fruits.toString();
+    document.getElementById("demo1").innerHTML=mylist;
+    console.log(typeof(mylist));
+   console.log(typeof(fruits));
+
+   //array at()
+   let vegetables=["carrot","lettuce","brinjal","beans"];
+   let veg =vegetables.at(2);
+   document.getElementById("demo2").innerHTML=veg;
+
+   //array join()
+document.getElementById("demo3").innerHTML=vegetables.join("&")
+
+//array pop()
+document.getElementById("demo4").innerHTML=vegetables.pop();
+console.log(vegetables);
+
+//array push()
+document.getElementById("demo5").innerHTML=vegetables.push("cabbage");
+console.log(vegetables);
+
+//array shift()
+let num=[1,23,32,45,34,54,85];
+document.getElementById("demo6").innerHTML=num.shift();
+console.log(num);
+
+//array unshift()
+document.getElementById("demo7").innerHTML=num.unshift(1);
+console.log(num);
+
+//array index()
+let position=num.indexOf(34)+1;
+document.getElementById("demo8").innerHTML="The numbers 34 is in the position:"+ position;
+
+//array sort()
+document.getElementById("demo9").innerHTML=vegetables.sort();
+//option comparison
+let number= num.sort(function(a,b){
+  return a-b;
+})
+document.getElementById("demo10").innerHTML=number
+
+  </script>
+</body>
+</html>
