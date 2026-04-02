@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="demo1"></p>
+  <script>
+    let mark=prompt();
+    if (mark>=90){
+      document.getElementById("demo1").innerHTML="Outstanding";
+    }
+    else if( mark<90 && mark>=80){
+      document.getElementById("demo1").innerHTML="Excellent";
+    }
+    else if(mark<80 && mark>=70){
+      document.getElementById("demo1").innerHTML="Good";
+    }
+    else if(mark<70 && mark>=60){
+      document.getElementById("demo1").innerHTML="Average";
+    }
+    else if(mark<60 && mark>=50){
+      document.getElementById("demo1").innerHTML="Pass";
+    }
+    else{
+      document.getElementById("demo1").innerHTML="Fail";
+    }
+  </script>
+</body>
+</html>
