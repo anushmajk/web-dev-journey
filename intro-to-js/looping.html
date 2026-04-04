@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documenthg</title>
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <script>
+    //for loop
+    for(let i=0; i<5;i++){
+console.log(i);
+document.getElementById("demo1").innerHTML+=i;
+    }
+    for(let j=0;j<=10;j++){
+      if(j%2==0)
+      console.log(j);
+    document.getElementById("demo2").innerHTML+=j;
+    }
+    //for loop with array
+   let fruits=["Apple", "Banana","Chery"]
+    for (let i=0; i<fruits.length;i++){
+      console.log(fruits[i]);
+      document.getElementById("demo4").innerHTML+=fruits[i]+",";
+    }
+    //reverse for loop
+    for(let i=5;i>0;i--){
+      console.log(i);
+      document.getElementById("demo5").innerHTML+=i;
+    }
+    //reverse array for loop
+    for(let i=fruits.length-1;i>=0;i--){
+      console.log(fruits[i]);
+       document.getElementById("demo6").innerHTML+=fruits[i]+",";
+ 
+    }
+  </script>
+</body>
+</html>
