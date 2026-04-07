@@ -40,6 +40,38 @@ document.getElementById("demo1").innerHTML+=i;
       console.log(fruits[i]);
        document.getElementById("demo6").innerHTML+=fruits[i]+",";
     }
+    //while loop
+    let i=0;
+    while(i<10){
+      console.log(i);
+   document.getElementById("demo7").innerHTML+=i;
+      i++;
+  }
+  //password
+  let password="Anu@1234";
+  let attempts=0;
+  while(attempts<3){
+    let inputpassword=prompt("Enter the password:");
+    if(inputpassword===password){
+      alert("Login sucessfull");
+      break;
+    }
+    else{
+      attempts++;
+      alert("Incorrect Password");
+      break;
+    }
+  }
+  if(attempts===3){
+    alert("Login Unsuccessful try again agter 24 hrs")
+  }
+
+  //do/while
+do{
+  console.log(i);
+  i++;
+}
+while(i<5)
   </script>
 </body>
 </html>

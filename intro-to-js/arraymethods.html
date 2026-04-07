@@ -26,6 +26,8 @@
    <!-- array sort()-->
    <p id="demo9"></p>
    <p id="demo10"></p>
+   <p id="demo11"></p>
+   <p id="demo12"></p>
   <script>
     // array to string
     const fruits=["Banana","Orange","Apple","Mango"];
@@ -71,6 +73,17 @@ let number= num.sort(function(a,b){
 })
 document.getElementById("demo10").innerHTML=number
 
+//for each method
+let arr=[1,23,34,56];
+arr.forEach(function(element){
+document.getElementById("demo11").innerHTML+=(element*2 + " ")
+console.log(element);
+})
+
+let menu = ["Coffee", "Tea", "Cake"];
+menu.forEach(element => {
+  document.getElementById("demo12").innerHTML += `<p>${element}</p>`;
+})
   </script>
 </body>
 </html>
