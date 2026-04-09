@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="demo1"></div>
+  <div id="demo2"></div>
+  <div id="demo3"></div>
+  <script>
+        let string=prompt("Enter a string:");
+    if(string){
+    let reverse="";
+    let count=0;
+    let vowels="aeiouAEIOU";
+    for (let i=string.length;i>0;i--){
+      reverse += string[i-1];
+      if(vowels.includes(string[i-1])){
+        count++;
+      }
+    } 
+    document.getElementById("demo1").innerHTML=reverse;
+    document.getElementById("demo3").innerHTML="Vowel count:"+count;
+    if(reverse===string){
+      document.getElementById("demo2").innerHTML="Palindrome: Yes";
+    }
+    else{
+      document.getElementById("demo2").innerHTML="Palindrome: No";
+    }
+  }
+  else{
+    alert("enter a valid string");
+  }
+  </script>
+</body>
+</html>

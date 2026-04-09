@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="number"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+    let num = string(prompt("Enter the number:"));
+    document.getElementById("number").innerHTML = num;
+    if(num % 2 === 0){
+      document.getElementById("demo1").innerHTML = "Even";
+    }
+    else{
+      document.getElementById("demo1").innerHTML = "Odd";
+    }
+    if(num > 0){
+      document.getElementById("demo2").innerHTML = "positive";
+    }
+    else if(num < 0){
+      document.getElementById("demo2").innerHTML = "negative";     
+    }
+    else{
+      document.getElementById("demo2").innerHTML = "zero";     
+    }
+  </script>
+</body>
+</html>
