@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="demo1"></div>
+  <div id="demo2"></div>
+  <div id="demo3"></div>
+  <div id="demo4"></div>
+  <div id="demo5"></div>
+  <script>
+    //task1
+    let name=prompt();
+    if(name){
+    name=name.trim();
+    name=name.toLowerCase();
+    console.log(name);
+    }
+    else{
+      alert("Invalid username");
+    }
+    //task2
+str="Javascript";
+    let pos= (str.indexOf('a'));
+    let op=("Position of a : " + (pos+1));
+    document.getElementById("demo1").innerHTML=op;
+
+    //task3
+    str="I love Coding";
+      let words = str.split(" ");
+    document.getElementById("demo2").innerHTML=words[1];
+    document.getElementById("demo3").innerHTML=words.length
+
+    //task4
+    str="I love JavaScript";
+    let vowels="aeiou";
+    str=str.toLowerCase();
+    let count=0;
+    for (let i=0;i<str.length;i++){
+      if(vowels.includes(str[i])){
+        count++;
+      }
+    }
+    document.getElementById("demo4").innerHTML=count;
+    //task5
+    str="I love JavaScript";
+     vowels="aeiou";
+     let newWord="";
+    for (let i=0;i<str.length;i++){
+      if(!vowels.includes(str[i])){
+        newWord+=str[i];
+      }
+    }
+    document.getElementById("demo5").innerHTML=newWord;
+     </script>
+</body>
+</html>

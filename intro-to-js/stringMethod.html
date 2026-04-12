@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //String Length()
+    let str="Anushma JK";
+    console.log(str.length);
+    //string toLowerCase()
+    console.log(str.toLowerCase());
+    //string toUpperCase()
+    console.log(str.toUpperCase());
+    //string includes()
+    console.log(str.includes("e"));
+    console.log(str.includes("u"));
+    //string indexOf()
+    console.log(str.indexOf("e"));
+    console.log(str.indexOf("u"));
+    //string slice()
+    str = "javascript";
+    console.log(str.slice(0, 4)); //the end 4 is actually s but it takes 4-1 3rd index 
+    //replace()
+    str="        Hello world        ";
+    console.log(str.replace("world","Anushma"));
+    //trim() remove spaces
+    console.log(str.trim())
+    //string split()
+    str = "a,b,c";
+    console.log(str.split(","));
+    //string charAt() and at() best at()
+    str="web developer";
+    console.log(str.charAt(2)); //b
+    console.log(str.at(2)) //b
+    console.log(str.charAt(82)); // white space
+    console.log(str.at(82)); // undefined
+    
+  </script>
+</body>
+</html>
