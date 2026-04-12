@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let person={
+      name:"Anushma",
+      age:20,
+      skills:['HTML','CSS','JS']
+    };
+    //accessing the values
+    console.log(person);
+    console.log(person.name);
+    console.log(person["age"]);
+    // modifying values
+    person.age=21;
+    console.log(person.age);
+
+    person.city="Trivandrum";
+    delete person.skills;
+
+    //objects inside the function
+    let student = {
+  name: "Anushma",
+  greet: function() {
+    console.log("Hello "+student.name +" !");
+  }
+};
+student.greet();
+  </script>
+</body>
+</html>
