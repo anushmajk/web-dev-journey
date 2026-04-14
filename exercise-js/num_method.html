@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //task1
+    let num=Number(prompt("Enter a number"));
+    console.log(num);
+    console.log(typeof(num));
+
+    //task2 &task3
+    if(!Number.isInteger(num)){
+      console.log(num.toFixed(2));
+      console.log("Decimal");
+      
+    }
+    else{
+      alert("invalid number");
+      console.log("Integer");
+    }
+
+    //task4
+    console.log(Math.round(num));
+
+    //task5
+    let a=Number(prompt("Enter a number"));
+    let b=Number(prompt("Enter a number"));
+    console.log(a);
+    console.log(b);
+    let sum=a+b;
+    console.log(sum);
+    let avg=sum/2;
+    console.log(avg.toFixed(2));
+  </script>
+</body>
+</html>
