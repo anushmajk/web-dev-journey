@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="demo1"></div>
+  <div id="demo2"></div>
+  <div id="demo3"></div>
+  <div id="demo4"></div>
+  <div id="demo5"></div>
+  <div id="demo6"></div>
+  <script>
+    //task1
+    let number=[1,2,3,4,5]
+    let doubled=number.map(element=>{
+      return element*2;
+    });
+    document.getElementById("demo1").innerHTML=`Doubled number ${doubled}`;
+    //task2
+    let num=[1,2,3,4,5,6,7,8,9,10];
+    let even_num=num.filter(element=>{
+      return element%2===0
+    });
+   document.getElementById("demo2").innerHTML=`Even number ${even_num}`;
+
+   //task3
+   let sum=num.reduce((total,element)=>{
+return total+element
+   },0);
+  document.getElementById("demo3").innerHTML=`Sum ${sum}`;
+
+  //task4
+  let students = [
+  { name: "A", marks: 80 },
+  { name: "B", marks: 45 },
+  { name: "C", marks: 60 }
+];
+let names=students.map(element=>{
+ return element.name;
+});
+  document.getElementById("demo4").innerHTML=`Name ${names}`;
+
+  //task5
+  let passed_student=students.filter(element=>{
+    return element.marks>=50;
+  });
+ let passed_list= passed_student.map(element=>{
+  return element.name+":"+element.marks
+  });
+    document.getElementById("demo5").innerHTML=`Passed students <br>${passed_list.join("<br>")}`;
+    let sums=students.reduce((total,element)=>{
+return total+element.marks;
+    },0)
+    let avg=sums/students.length;
+     document.getElementById("demo6").innerHTML=`Average ${avg.toFixed(2)}`; 
+  </script>
+</body>
+</html>
