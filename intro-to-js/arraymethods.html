@@ -61,7 +61,7 @@ document.getElementById("demo6").innerHTML=num.shift();
 console.log(num);
 
 //array unshift()
-document.getElementById("demo7").innerHTML=num.unshift(1);
+document.getElementById("demo7").innerHTML=num.unshift(1); //returns the ans as number of length of the array
 console.log(num);
 
 //array index()
@@ -80,13 +80,53 @@ document.getElementById("demo10").innerHTML=number
 let arr=[1,23,34,56];
 arr.forEach(function(element){
 document.getElementById("demo11").innerHTML+=(element*2 + " ")
-console.log(element);
+console.log(element*2 + " ");
 })
+console.log(arr); // no changes
+
 
 let menu = ["Coffee", "Tea", "Cake"];
 menu.forEach(element => {
   document.getElementById("demo12").innerHTML += `<p>${element}</p>`;
 })
+
+//map method
+let newArr=arr.map(function(element){
+  return element*2;
+});
+console.log(newArr);
+
+//filter method
+let array=[2,4,6,8,9,3,5,1];
+newArr=array.filter(function(element){
+  return element%2===0;
+})
+console.log(newArr);
+
+//reduce method
+let abc=[1,2,3,4,5];
+let sum=abc.reduce(function(total,element){
+  return total+element;
+},0);
+console.log(sum);
+
+//find method
+let xyx=abc.find(function(element){
+  return element>3;
+});
+console.log(xyx);
+
+//includes method
+let newss=abc.includes(2);
+console.log(newss);
+
+//splice method
+let newabc=abc.splice(2,2,11,12);
+console.log(abc); // 1,2,11,12,5
+console.log(newabc);//3,4
+
+//slice method
+
   </script>
 </body>
 </html>
