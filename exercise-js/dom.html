@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="myList"></ul>
+  <script>
+    //TASK1
+    let button=document.createElement("button")
+    button.id="button"
+    button.innerText="click here";
+    document.body.appendChild(button);
+    //TASK2
+    let list = document.getElementById("myList");
+    let item1 = document.createElement("li");
+    item1.textContent = "Apple";
+    let item2 = document.createElement("li");
+    item2.textContent = "Banana";
+    let item3 = document.createElement("li");
+    item3.textContent = "Cherry";
+    list.appendChild(item1);
+    list.appendChild(item2);
+    list.appendChild(item3);
+  </script>
+</body>
+</html>

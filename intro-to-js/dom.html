@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="mylist">
+    <li id="oldpara">List1</li>
+  </ul>
+  <div id="myDiv"></div>
+  <a id="myLink" href="https://chatgpt.com/c/69e06610-19b8-83e8-b4a0-609ba1d3b26b">Chatgpt</a>
+  <script>
+//create Element
+let newPara= document.createElement("p");
+newPara.id="demo";
+newPara.textContent="This is a new para";
+document.body.appendChild(newPara);
+let item=document.createElement("li")
+item.textContent="list1"
+document.getElementById("mylist").appendChild(item);
+let list =document.getElementById("mylist");
+list.removeChild(item);
+let button=document.createElement("button");
+button.id="button";
+button.textContent="click here"
+document.body.appendChild(button);
+//replace child
+let parent=document.getElementById("mylist");
+let newpara =document.createElement("li")
+newpara.textContent="list2";
+let oldpara=document.getElementById("oldpara");
+parent.replaceChild(newpara,oldpara);
+
+//changing HTML element
+document.getElementById("demo").innerHTML="New text" //innerHTML
+//set attribute
+let div=document.getElementById("myDiv");
+div.setAttribute("class","box");
+div.setAttribute("id","newid");
+//get attribute
+let a=document.getElementById("myLink");
+let hrefvalue=a.getAttribute("href");
+console.log(hrefvalue);
+let hre=div.getAttribute("class");
+console.log(hre);
+  </script>
+</body>
+</html>
