@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Document</title>
+  <style>
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .screen{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .task{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      width:250px;
+      height:30px;
+      border-radius: 15px;
+      background-color: #eee;
+    }
+    .todo{
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .cancel{
+      display: inline-block;
+      margin-left: 10px;
+      color: red;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Todo List</h1>
+  <div class="screen">
+      <input type="text" class="display">
+      <button id="add">Add</button>
+       </div>
+      <div id="list-container"></div>
+   
+    </div>
+    <script>
+      let displayinput=document.querySelector(".display");
+      let addbtn=document.querySelector("#add");
+      addbtn.addEventListener("click",function(){
+        if(displayinput.value===""){
+          return;
+        }
+        let task=document.createElement("div");
+        task.setAttribute("class","task");
+        let list=document.createElement("input");
+        list.setAttribute("type","checkbox");
+        list.setAttribute("style","border-radius: 50%;");
+        list.setAttribute("class","list");
+        let todo=document.createElement("p");
+        todo.setAttribute("class","todo");
+        todo.textContent=displayinput.value;
+        let cancel=document.createElement("button");
+        cancel.setAttribute("class","cancel");
+        cancel.innerHTML='<i class="fa-solid fa-xmark"></i>';
+        cancel.addEventListener("click",function(){
+          task.remove();
+        });
+        task.appendChild(list);
+        task.appendChild(todo);
+       task.appendChild(cancel);
+       document.getElementById("list-container").appendChild(task);
+        displayinput.value="";
+      });
+    </script>
+</body>
+</html>
