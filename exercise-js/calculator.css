@@ -1,0 +1,23 @@
+.container{
+    width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+.display{
+  width:390px;
+  padding:10px;
+}
+.buttons{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height:400px;
+}
+button{
+  font-size:20px;
+}
+button:hover{
+  background-color: blue;
+}
