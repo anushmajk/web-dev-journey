@@ -1,0 +1,33 @@
+ .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .screen{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .task{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 5px;
+      width:250px;
+      height:30px;
+      border-radius: 15px;
+      background-color: #eee;
+    }
+    .todo{
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .cancel{
+      display: inline-block;
+      margin-left: 10px;
+      color: red;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+    }
