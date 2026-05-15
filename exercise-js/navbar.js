@@ -37,6 +37,6 @@
     contactBtn.addEventListener("click", function(){
       content.innerHTML = `
         <h1>Contact Page</h1>
-        <p>Email: example@gmail.com</p>
+        <p>Email: anushmajk@gmail.com</p>
       `;
     });
