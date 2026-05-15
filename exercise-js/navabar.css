@@ -1,15 +1,8 @@
-
-    body{
-      margin:0;
-    }
-
-    /* Main layout */
     .container{
       display:flex;
       height:100vh;
     }
 
-    /* Sidebar */
     .sidebar{
       width:200px;
       top:0;
