@@ -7,8 +7,8 @@ This repository contains my web development practice projects and learning exper
 - HTML (completed)
 - CSS  (completed)
 - Bootstrap(Completed)
-- JavaScript (ongoing) 
-- React (future)  
+- JavaScript (Completed) 
+- React (Ongoing)  
 - Node.js & Express (future)  
 - MongoDB (future)
 ## 🎯 Goal
