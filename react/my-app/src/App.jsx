@@ -2,7 +2,7 @@ import React from 'react'
 import Student from './Practice problem/Student'
 import Card from 'react-bootstrap/Card';
 import Usestate1 from './Learning/Day-1/Usestate1';
-
+import "./App.css";
 //Student.jsx
 // const App = () => {
 
@@ -35,7 +35,7 @@ import Usestate1 from './Learning/Day-1/Usestate1';
 //useState.jsx
 const App = () => {
   return (
-    <Usestate1/>
+    <Usestate1 />
   )
 }
 
