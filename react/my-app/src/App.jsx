@@ -3,6 +3,8 @@ import Student from './Practice problem/Student'
 import Card from 'react-bootstrap/Card';
 import Usestate1 from './Learning/Day-1/Usestate1';
 import "./App.css";
+import UseEffect1 from './Learning/Day-1/UseEffect1';
+import Data from './Learning/Day-1/Data';
 //Student.jsx
 // const App = () => {
 
@@ -35,7 +37,9 @@ import "./App.css";
 //useState.jsx
 const App = () => {
   return (
-    <Usestate1 />
+    // <Usestate1 />
+    // <UseEffect1/>
+    <Data/>
   )
 }
 
