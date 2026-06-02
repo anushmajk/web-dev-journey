@@ -1,10 +1,12 @@
 import React from 'react'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Student from './Practice problem/Student'
 import Card from 'react-bootstrap/Card';
 import Usestate1 from './Learning/Day-1/Usestate1';
 import "./App.css";
 import UseEffect1 from './Learning/Day-1/UseEffect1';
 import Data from './Learning/Day-1/Data';
+import UseNavigate1 from './Learning/Day-1/UseNavigate1';
 //Student.jsx
 // const App = () => {
 
@@ -37,9 +39,12 @@ import Data from './Learning/Day-1/Data';
 //useState.jsx
 const App = () => {
   return (
-    // <Usestate1 />
-    // <UseEffect1/>
-    <Data/>
+    <Routes>
+      <Route path="/" element={<UseNavigate1 />}></Route>
+      <Route path="/useEffect" element={<UseEffect1 />}></Route>
+      <Route path="/useState" element={<Usestate1 />}></Route>
+      
+      </Routes>
   )
 }
 
