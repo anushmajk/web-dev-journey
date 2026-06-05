@@ -7,6 +7,9 @@ import "./App.css";
 import UseEffect1 from './Learning/Day-1/UseEffect1';
 import Data from './Learning/Day-1/Data';
 import UseNavigate1 from './Learning/Day-1/UseNavigate1';
+import Yup1 from './Learning/Day-2/Yup1';
+import Param1 from './Learning/Day-2/Param1';
+import RegistrationForm from './Practice problem/RegistrationForm';
 //Student.jsx
 // const App = () => {
 
@@ -38,13 +41,19 @@ import UseNavigate1 from './Learning/Day-1/UseNavigate1';
 
 //useState.jsx
 const App = () => {
+  const person=[{id:101,name:"sonu",age:'21'}]
   return (
-    <Routes>
-      <Route path="/" element={<UseNavigate1 />}></Route>
-      <Route path="/useEffect" element={<UseEffect1 />}></Route>
-      <Route path="/useState" element={<Usestate1 />}></Route>
+    // <Routes>
+    //   <Route path="/" element={<UseNavigate1 />}></Route>
+    //   <Route path="/useEffect" element={<UseEffect1 />}></Route>
+    //   <Route path="/useState" element={<Usestate1 />}></Route>
       
-      </Routes>
+    //   </Routes>
+    <Yup1/>
+    // <Routes>
+    //   <Route path='/' element={<Param1 person={person} />}></Route>
+    // </Routes>
+    // <RegistrationForm/>
   )
 }
 
