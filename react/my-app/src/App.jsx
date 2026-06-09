@@ -1,15 +1,6 @@
 import React from 'react'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
-import Student from './Practice problem/Student'
-import Card from 'react-bootstrap/Card';
-import Usestate1 from './Learning/Day-1/Usestate1';
-import "./App.css";
-import UseEffect1 from './Learning/Day-1/UseEffect1';
-import Data from './Learning/Day-1/Data';
-import UseNavigate1 from './Learning/Day-1/UseNavigate1';
-import Yup1 from './Learning/Day-2/Yup1';
-import Param1 from './Learning/Day-2/Param1';
-import RegistrationForm from './Practice problem/RegistrationForm';
+import Navbar1 from './Practice problem/Navbar1';
 //Student.jsx
 // const App = () => {
 
@@ -49,11 +40,11 @@ const App = () => {
     //   <Route path="/useState" element={<Usestate1 />}></Route>
       
     //   </Routes>
-    <Yup1/>
+    // <Yup1/>
     // <Routes>
     //   <Route path='/' element={<Param1 person={person} />}></Route>
     // </Routes>
-    // <RegistrationForm/>
+    <Navbar1/>
   )
 }
 
