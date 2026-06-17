@@ -1,63 +1,40 @@
-import { useState } from "react";
+import React, { useState } from 'react'
 
-function RegistrationForm() {
+const RegistrationForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     password: ""
   });
 
- const updateForm = (e) => {
+  const updateForm = (e) => {
     const { name, value } = e.target;
-    setFormData((prevState) => ({
+    setFormData = ((prevState) => ({
       ...prevState,
       [name]: value
-    }))
+    }));
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-   alert(`
-      Welcome ${formData.name}! You are registered with the email ${formData.email}.
-    `);
-  };
-
+    alert('WELCOME!')
+}
   return (
-    <div className="container mt-5">
-      <h2>Registration Form</h2>
+    <div>
+      <h3>Create Account</h3>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={updateForm}/>
-        </div>
-        <div>
-          <label>Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={updateForm}
-          />
-        </div>
-        <div>
-          <label>Password</label>
-          <input
-            type="password"
-            name="password"
-            value={formData.password}
-            onChange={updateForm}
-          />
-        </div>
-        <button className="btn btn-primary">
-          Register
-        </button>
-      </form>
+        <div className='input-box'>
+          <input type='text' name='name' placeholder="Full Name"value={formData.name} onChange={updateForm} />
+          </div>
+        <div className='input-box'>
+      <input type='email' name='email'placeholder='Email Address' value={formData.email} onChange={updateForm} />
+     </div>
+        <div className='input-box'>
+        <input type='password' name='password' placeholder='Password' value={formData.password} onChange={updateForm} />
     </div>
-  );
+        <button type='submit'>Sign up</button>
+        </form>
+    </div>
+  )
 }
 
-export default RegistrationForm;
+export default RegistrationForm

@@ -1,6 +1,12 @@
 import React from 'react'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import Navbar1 from './Practice problem/Navbar1';
+import RegistrationForm from './Practice problem/RegistrationForm';
+import UseEffect2 from './Learning/Day-1/UseEffect2';
+import UseLocate1 from './Learning/Day-1/UseLocate1';
+import UseLocatae2 from './Learning/Day-1/UseLocatae2';
+import UseParams1 from './Learning/Day-1/UseParams1';
+import UseParams2 from './Learning/Day-1/UseParams2';
 //Student.jsx
 // const App = () => {
 
@@ -31,20 +37,37 @@ import Navbar1 from './Practice problem/Navbar1';
 // }
 
 //useState.jsx
-const App = () => {
-  const person=[{id:101,name:"sonu",age:'21'}]
-  return (
-    // <Routes>
-    //   <Route path="/" element={<UseNavigate1 />}></Route>
-    //   <Route path="/useEffect" element={<UseEffect1 />}></Route>
-    //   <Route path="/useState" element={<Usestate1 />}></Route>
+// const App = () => {
+//   const person=[{id:101,name:"sonu",age:'21'}]
+//   return (
+//     // <Routes>
+//     //   <Route path="/" element={<UseNavigate1 />}></Route>
+//     //   <Route path="/useEffect" element={<UseEffect1 />}></Route>
+//     //   <Route path="/useState" element={<Usestate1 />}></Route>
       
-    //   </Routes>
-    // <Yup1/>
-    // <Routes>
-    //   <Route path='/' element={<Param1 person={person} />}></Route>
-    // </Routes>
-    <Navbar1/>
+//     //   </Routes>
+//     // <Yup1/>
+//     // <Routes>
+//     //   <Route path='/' element={<Param1 person={person} />}></Route>
+//     // </Routes>
+//     <Navbar1/>
+//   )
+// }
+
+const App = () => {
+  const person = [{ id: 101, name: "sonu", age: '21' }]
+  
+  return (
+    <div>
+      {/* <RegistrationForm /> */}
+      {/* <UseEffect2/> */}
+      {/* <UseLocate1/> */}
+      {/* <UseLocatae2/> */}
+        <Routes>
+          <Route path="/" element={<UseParams1 person={person} />} />
+          <Route path="/student/:id" element={<UseParams2 person={person} />} />
+        </Routes>
+   </div> 
   )
 }
 
