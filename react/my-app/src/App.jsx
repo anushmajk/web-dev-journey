@@ -10,6 +10,8 @@ import UseParams2 from './Learning/Day-1/UseParams2';
 import Homes from './Practice problem/Homes';
 import Student from './Practice problem/Student';
 import Studentdetails from './Practice problem/Studentdetails';
+import Async1 from './Learning/Day-3/Async1';
+import Search1 from './Learning/Day-3/Search1';
 //Student.jsx
 // const App = () => {
 
@@ -74,11 +76,15 @@ const App = () => {
       {/* <UseEffect2/> */}
       {/* <UseLocate1/> */}
       {/* <UseLocatae2/> */}
-        <Routes>
+
+      {/* Router react */}
+        {/* <Routes>
           <Route path="/" element={<Homes/>} />
         <Route path="/student" element={<Student person={person} />} />
         <Route path="/student/:id" element={<Studentdetails person={person} />} />
-      </Routes>
+      </Routes> */}
+      {/* <Async1/> */}
+      <Search1/>
    </div> 
   )
 }
