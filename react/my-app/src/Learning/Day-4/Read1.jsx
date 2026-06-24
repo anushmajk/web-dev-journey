@@ -8,15 +8,15 @@ const Read1 = () => {
   const [fadeIn, setFadeIn] = useState(false);
   const navigate = useNavigate();
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/users')
+    axios.get('http://localhost:4000/posts')
       .then((response) => setStudents(response.data))
       .catch((error) => console.log(error));
     setFadeIn(true);
   }, []);
   const deleteStudent = async (id) => {
     try {     
-      await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
-      alert('Student deleted successfully');
+      await axios.delete(`http://localhost:4000/posts/${id}`);
+      alert('Post deleted successfully');
       setStudents((prevStudents) => prevStudents.filter((student) => student.id !== id));
     } catch (error) {
       console.log(error);
@@ -29,8 +29,8 @@ const Read1 = () => {
         <Col key={student.id} md={4} className={`mb-4 ${fadeIn ? 'fade-in' : ''}`}>
           <Card>
             <Card.Body>
-              <Card.Title>{student.name}</Card.Title>
-              <Card.Text>{student.email}</Card.Text>
+              <Card.Title>{student.title}</Card.Title>
+              <Card.Text>{student.author}</Card.Text>
               <Button variant="danger" onClick={() => deleteStudent(student.id)}>
                 Delete
               </Button>

@@ -13,6 +13,8 @@ import Studentdetails from './Practice problem/Studentdetails';
 import Async1 from './Learning/Day-3/Async1';
 import Search1 from './Learning/Day-3/Search1';
 import Axios1 from './Learning/Day-4/Axios1';
+import Read1 from './Learning/Day-4/Read1';
+
 //Student.jsx
 // const App = () => {
 
@@ -86,7 +88,8 @@ const App = () => {
       </Routes> */}
       {/* <Async1/> */}
       {/* <Search1/> */}
-      <Axios1/>
+      {/* <Axios1/> */}
+      <Read1/>
    </div> 
   )
 }
