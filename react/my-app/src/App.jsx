@@ -12,6 +12,7 @@ import Student from './Practice problem/Student';
 import Studentdetails from './Practice problem/Studentdetails';
 import Async1 from './Learning/Day-3/Async1';
 import Search1 from './Learning/Day-3/Search1';
+import Axios1 from './Learning/Day-4/Axios1';
 //Student.jsx
 // const App = () => {
 
@@ -84,7 +85,8 @@ const App = () => {
         <Route path="/student/:id" element={<Studentdetails person={person} />} />
       </Routes> */}
       {/* <Async1/> */}
-      <Search1/>
+      {/* <Search1/> */}
+      <Axios1/>
    </div> 
   )
 }
