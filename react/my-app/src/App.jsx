@@ -61,37 +61,18 @@ import Read1 from './Learning/Day-4/Read1';
 //     <Navbar1/>
 //   )
 // }
-
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from './Learning/day-5/CounterSlice';
 const App = () => {
-  const person = [{ id: 101, name: "sonu", age: '21' },
-    { id: 102, name: "sonu1", age: '22' },
-    { id: 103, name: "sonu2", age: '23' },
-    { id: 104, name: "sonu3", age: '24' },
-    { id: 105, name: "sonu4", age: '25' },
-    { id: 106, name: "sonu5", age: '26' },
-    { id: 107, name: "sonu6", age: '27' },
-    { id: 108, name: "sonu7", age: '28' }
-  ]
-  
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
   return (
     <div>
-      {/* <RegistrationForm /> */}
-      {/* <UseEffect2/> */}
-      {/* <UseLocate1/> */}
-      {/* <UseLocatae2/> */}
-
-      {/* Router react */}
-        {/* <Routes>
-          <Route path="/" element={<Homes/>} />
-        <Route path="/student" element={<Student person={person} />} />
-        <Route path="/student/:id" element={<Studentdetails person={person} />} />
-      </Routes> */}
-      {/* <Async1/> */}
-      {/* <Search1/> */}
-      {/* <Axios1/> */}
-      <Read1/>
-   </div> 
-  )
+      <h1>Counter: {count}</h1>
+      <button onClick={() => dispatch(increment())}>Increment</button>
+      <button onClick={() => dispatch(decrement())}>Decrement</button>
+    </div>
+  );
 }
 
 export default App
