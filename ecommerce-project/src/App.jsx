@@ -8,7 +8,7 @@ function App() {
     <>
     <Routes>
       <Route index element={<HomePage/>} />
-      <Route path='/checkout' element={<div>Checkout</div>} />
+      <Route path='/checkout' element={<CheckoutPage/>} />
     </Routes>
     </>
   )
