@@ -8,25 +8,35 @@ app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
 });*/
 
-const express =require('express');
-const app=express();
+const express = require("express");
+const app = express();
+
 app.use(express.json());
-app.post("/login",(req,res)=>{
 
-const {username,password}=req.body;
-
-if(username==="admin" && password==="1234"){
-    res.json({
-        message:"Login Successful"
-    });
-}
-else{
-    res.status(401).json({
-        message:"Invalid Credentials"
-    });
-}
+// GET route
+app.get("/", (req, res) => {
+    res.send("Express is working!");
 });
-const PORT =3000;
-app.listen(PORT,()=>{
+
+// POST route
+app.post("/login", (req, res) => {
+
+    const { username, password } = req.body;
+
+    if (username === "admin" && password === "1234") {
+        res.json({
+            message: "Login Successful"
+        });
+    } else {
+        res.status(401).json({
+            message: "Invalid Credentials"
+        });
+    }
+
+});
+
+const PORT = 3000;
+
+app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
