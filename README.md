@@ -8,8 +8,8 @@ This repository contains my web development practice projects and learning exper
 - CSS  (completed)
 - Bootstrap(Completed)
 - JavaScript (Completed) 
-- React (Ongoing)  
-- Node.js & Express (future)  
+- React (Completed)  
+- Node.js & Express (Ongoing)  
 - MongoDB (future)
 ## 🎯 Goal
 To become a full-stack MERN developer by building real-world projects.
