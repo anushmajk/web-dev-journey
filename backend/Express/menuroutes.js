@@ -1,11 +1,18 @@
-const express =require("express");
+const express = require("express");
 const router = express.Router();
 
-router.get('/',(req,res)=>{
-    res.send(" All Products");
-});
-router.get('/:id',(req,res)=>{
-    res.send(`Product with id ${req.params.id}`);
+router.get("/", (req, res) => {
+    res.send("Menu Home");
 });
 
-module.exports=router;
+router.get("/:id", (req, res) => {
+    const products={
+        1: "Pizza",
+        2: "Burger",
+        3: "Pasta",
+        4: "Salad"
+    }
+    res.send("Product is " + products[req.params.id] || "Product not found");
+});
+
+module.exports = router;

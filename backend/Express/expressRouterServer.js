@@ -1,7 +1,10 @@
-const express=require("express");
-const app=express();
-const menuroutes= require("./menuroutes");
-app.use("/",menuroutes);
-app.listen(3000,()=>{
+const express = require("express");
+const app = express();
+
+const menuroutes = require("./menuroutes");
+
+app.use("/menu", menuroutes);
+
+app.listen(3000, () => {
     console.log("Server is running on port 3000");
 });
