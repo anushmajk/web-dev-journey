@@ -8,7 +8,7 @@ app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
 });*/
 
-const express = require("express");
+/*const express = require("express");
 const { startTransition } = require("react");
 const app = express();
 
@@ -40,5 +40,16 @@ const PORT = 3000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+});*/
+
+const express= require("express");
+const app=express();
+app.use(express.json());
+const userRoutes =require("./routes/userRoutes");
+app.use("/users",userRoutes);
+
+const PORT = 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
-/*startTransition*/
