@@ -1,4 +1,4 @@
-/*const express= require("express");
+const express= require("express");
 const app= express();
 app.use(express.json());
 
@@ -14,7 +14,7 @@ function validateLoginForm(req,res,next){
 app.post("/login",validateLoginForm,(req,res)=>{
     res.send("Login successful");
 });
-app.listen(3000); */
+app.listen(3000); 
 
 //task1
 const express =require("express");
@@ -48,4 +48,7 @@ app.use("/",(req,res,next)=>{
 });
 app.get("/hello",(req,res)=>{
     res.send("Hello Express");
+});
+app.listen(3000, () => {
+    console.log("Server running on port 3000");
 });
