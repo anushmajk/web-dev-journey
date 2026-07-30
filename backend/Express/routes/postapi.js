@@ -6,6 +6,9 @@ let users = [
     { id: "02", name: "Ajishma" }
 ];
 
+router.get("/",(req,res)=>{
+     res.json(users);
+});
 // GET /users/:id
 router.get("/:id", (req, res) => {
 
@@ -22,6 +25,24 @@ router.get("/:id", (req, res) => {
     }
 
     res.json(user);
+});
+
+//POST
+
+router.post("/",(req,res)=>{
+    const {name}=req.body;
+    if(!name){
+        res.status(400).json({
+            message:" Name is required"
+        });
+    }
+    const newUser ={
+        id:String(users.length+1).padStart(2,"0"),
+        name :name
+    };
+    users.push(newUser);
+    res.status(201).json(newUser);
+
 });
 
 module.exports = router;
