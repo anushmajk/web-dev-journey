@@ -17,9 +17,7 @@ app.post("/login",validateLoginForm,(req,res)=>{
 app.listen(3000); 
 
 //task1
-const express =require("express");
-const app=express();
-app.use(express.json());
+
 app.use("/",(req,res,next)=>{
     console.log("Request recieved");
     next();
